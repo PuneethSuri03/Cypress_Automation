@@ -1,0 +1,20 @@
+describe('Login page', () => {
+    it('Navigate to Login page', () => {
+        cy.visit("https://guenergy-storefront-staging5.elasticsuite.com/login")
+        // cy.get('#ion-input-0').type('testrep')
+        // cy.get('#ion-input-1').type('Replatform')
+        // cy.get('[data-testid="btn-submit"]').click()
+        // cy.wait(5000)
+        // cy.get('.searchbar-input').type('C0006')
+        // cy.wait(5000)
+        // cy.get("._name_17l6r_141").click()
+        // cy.get('ion-toolbar.md > :nth-child(2) > ._button_yzugg_124').click()
+        // cy.wait(2000)
+        // cy.get('[data-testid="menu-button"]').click()
+        // cy.get('._subMenu_ycjrr_163').click()
+        cy.get('#ion-input-0').type("testdealer") 
+        cy.get('#ion-input-1').type("Replatform")
+        cy.get('ion-button[type="submit"]').click()
+    })
+  })
+  

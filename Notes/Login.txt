@@ -1,0 +1,32 @@
+/// <reference types="Cypress" />
+
+import RepLoginPage from "../../PageObjects/RepLoginPage";
+import DealerLoginPage from "../../PageObjects/DealerLoginPage";
+
+describe('login to jetty Storefront as Rep', () => {
+    it('Validate - Rep logged in to Jetty Staging successfully', () => {
+        const repLoginPage = new RepLoginPage()
+        repLoginPage.RepJettyLogin()
+        cy.get('body.backdrop-no-scroll:nth-child(2) ion-app.md.ion-page ion-modal._menuWrapper_155h0_124._chooseCustomerModal_14g88_124.md.modal-default.show-modal:nth-child(3) div.ion-delegate-host.ion-page ion-searchbar._customerSearchbox_14g88_133.sc-ion-searchbar-md-h.sc-ion-searchbar-md-s.md.searchbar-left-aligned.searchbar-should-show-clear div.searchbar-input-container.sc-ion-searchbar-md > input.searchbar-input.sc-ion-searchbar-md').should('be.visible')
+        cy.clearCookies()
+        cy.wait(10000)
+    })
+})
+describe('login to jetty storefront as Dealer', () => {
+    it('Validate - Dealer logged into Jetty Staging Successfully', () => {
+        const dealerloginpage = new DealerLoginPage()
+        dealerloginpage.DealerJettyLogin()
+    })
+})
+// describe('login to fairharbor storefront as Rep', () => {
+//     it('Validate - Rep logged into fairharbor Staging Successfully', () => {
+//         const reploginpage = new RepLoginPage()
+//         reploginpage.RepFairharborLogin()
+//     })
+// })
+// describe('login to fairharbor storefront as Dealer', () => {
+//     it('Validate - Dealer logged into fairharbor Staging Successfully', () => {
+//         const dealerloginpage = new DealerLoginPage()
+//         dealerloginpage.DealerFairharborLogin()
+//     })
+// })
