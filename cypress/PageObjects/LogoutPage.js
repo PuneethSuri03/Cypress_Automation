@@ -26,7 +26,7 @@ class LoginPage {
         cy.get('#ion-input-1').type(dealerLogin.dealerJettyPassword, {force: true})
         cy.get('ion-button[type="submit"]').click()
         cy.wait(5000)
-        cy.get('[data-testid="menu-button"]').click()
+        cy.get('ion-menu-button[data-testid="menu-button"]').click()
         cy.wait(5000)
         cy.get('._subMenu_ycjrr_163').click()
 
@@ -36,7 +36,7 @@ class LoginPage {
         cy.get('#ion-input-1').type(dealerLogin.dealerFairharborPassword, {force: true})
         cy.get('ion-button[type="submit"]').click()
         cy.wait(5000)
-        cy.get('[data-testid="menu-button"]').click()
+        cy.get('ion-menu-button[data-testid="menu-button"]').click()
         cy.wait(5000)
         cy.get('._subMenu_ycjrr_163').click()
 
@@ -46,7 +46,7 @@ class LoginPage {
         cy.get('#ion-input-1').type(dealerLogin.dealerBogsPassword, {force: true})
         cy.get('ion-button[type="submit"]').click()
         cy.wait(5000)
-        cy.get('[data-testid="menu-button"]').click()
+        cy.get('ion-menu-button[data-testid="menu-button"]').click()
         cy.wait(5000)
         cy.get('._subMenu_ycjrr_163').click()
 
@@ -56,7 +56,7 @@ class LoginPage {
         cy.get('#ion-input-1').type(dealerLogin.dealerGuenergyPassword, {force: true})
         cy.get('ion-button[type="submit"]').click()
         cy.wait(5000)
-        cy.get('[data-testid="menu-button"]').click()
+        cy.get('ion-menu-button[data-testid="menu-button"]').click()
         cy.wait(5000)
         cy.get('._subMenu_ycjrr_163').click()
 
@@ -68,7 +68,7 @@ class LoginPage {
         cy.wait(5000)
         cy.get('ion-toolbar.md > :nth-child(1) > ._button_2esx6_124').click()
         cy.wait(5000)
-        cy.get('[data-testid="menu-button"]').click()
+        cy.get('ion-menu-button[data-testid="menu-button"]').click()
         cy.wait(5000)
         cy.get('._subMenu_ycjrr_163').click()
 
@@ -80,7 +80,7 @@ class LoginPage {
         cy.wait(5000)
         cy.get('ion-toolbar.md > :nth-child(1) > ._button_2esx6_124').click()
         cy.wait(5000)
-        cy.get('[data-testid="menu-button"]').click()
+        cy.get('ion-menu-button[data-testid="menu-button"]').click()
         cy.wait(5000)
         cy.get('._subMenu_ycjrr_163').click()
 
@@ -93,7 +93,7 @@ class LoginPage {
         cy.wait(5000)
         cy.get('ion-toolbar.md > :nth-child(1) > ._button_2esx6_124').click()
         cy.wait(5000)
-        cy.get('[data-testid="menu-button"]').click()
+        cy.get('ion-menu-button[data-testid="menu-button"]').click()
         cy.wait(5000)
         cy.get('._subMenu_ycjrr_163').click()
 
@@ -105,7 +105,7 @@ class LoginPage {
         cy.wait(5000)
         cy.get('ion-toolbar.md > :nth-child(1) > ._button_2esx6_124').click()
         cy.wait(5000)
-        cy.get('[data-testid="menu-button"]').click()
+        cy.get('ion-menu-button[data-testid="menu-button"]').click()
         cy.wait(5000)
         cy.get('._subMenu_ycjrr_163').click()
 

@@ -3,5 +3,5 @@
     "jettyUrl": "https://jetty-storefront-staging5.elasticsuite.com",
  
     "guenergyUrl": "https://guenergy-storefront-staging5.elasticsuite.com",
-    "bogsUrl": "https://bogs-storefront-staging.elasticsuite.com"
+    "bogsUrl": "https://bogs-storefront-staging.elasticsuite.com/login"
 }

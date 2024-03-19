@@ -10,13 +10,13 @@ describe('login to Fairharbor storefront as Dealer', () => {
         const incorrectLogin = new IncorrectLogin()
         incorrectLogin.FairharborIncorrectLogin()
         cy.wait(5000)
-        cy.get('._invalidCredentialsMessage_1n567_124').should('be.visible')
+        cy.get('[class*=_invalidCredentialsMessage]').should('be.visible')
     })
 
     it('Validate - Dealer logged into Fairharbor Staging Successfully', () => {
         const dealerloginpage = new DealerLoginPage()
         dealerloginpage.DealerFairharborLogin()
-        cy.get('._logoContainer_s3tr3_129').should('be.visible')
+        cy.get('[class*=_logoContainer]').should('be.visible')
     })
     
 })
