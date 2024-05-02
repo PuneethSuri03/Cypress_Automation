@@ -1,16 +1,5 @@
 {
-  "name": "mobilefeautomation",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "automation": "cypress config feature:network:disableHttp2"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "cypress": "^13.7.0",
-    "cypress-mailosaur": "^2.14.0"
+  "dependencies": {
+    "nodemailer": "^6.9.13"
   }
 }
